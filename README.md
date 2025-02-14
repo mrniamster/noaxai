@@ -66,7 +66,7 @@ NoaxAI brings the power of large language models directly into your editor - no 
 
 ## Installation
 
-1. Install the extension from VS Code marketplace
+1. Install [NoaxAI](https://marketplace.visualstudio.com/items?itemName=mrniamster.noaxai)  extension from VS Code marketplace 
 2. Open VS Code
 3. Open the "Explore Models" panel in the sidebar
 4. Click on a model to install it locally
