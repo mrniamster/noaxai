@@ -179,6 +179,6 @@ Current model priorities:
 
 ## Support & Community 👥
 
-- Follow [@mrniamster](https://twitter.com/mrniamster) for updates
-- Join our [Discord Community](https://discord.gg/yourdiscord)
+<!-- - Follow [@mrniamster](https://twitter.com/mrniamster) for updates
+- Join our [Discord Community](https://discord.gg/yourdiscord) -->
 - Star the repo to show support! ⭐
