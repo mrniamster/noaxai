@@ -1,4 +1,4 @@
-# NoaxAI 🌠 - Your Local AI Coding Assistant (HF ONNX Runtime)
+# NoaxAI 🌠 - Run Models Locally | Your Local AI Coding Assistant 
 
 <div align="center">
 
@@ -12,14 +12,14 @@
 
 </div>
 
-> Run Hugging Face models locally in VS Code! Code with AI assistance completely offline using ONNX runtime.
+> Run Hugging Face models locally in VS Code! Code with AI assistance completely offline using  runtime.
 
 NoaxAI brings the power of large language models directly into your editor - no cloud services required. Download models once, then work completely offline with AI-powered coding assistance.
 
 ## Why NoaxAI? 🤔
 
 - 🔒 **Privacy First**: All AI operations run locally on your machine
-- 💨 **Fast & Efficient**: Uses ONNX optimized models for quick responses
+- 💨 **Fast & Efficient**: Uses  optimized models for quick responses
 - 🌐 **Offline Ready**: No internet needed after initial model download
 - 🎯 **Code Focused**: Built specifically for programming workflows
 - 💰 **Free Forever**: No subscriptions or API costs
@@ -31,7 +31,7 @@ NoaxAI brings the power of large language models directly into your editor - no 
 - Explore and manage AI models through the "Explore Models" panel
 - Install multiple models locally
 - Switch between different models for various tasks
-- Supports ONNX optimized models for efficient local execution
+- Supports  optimized models for efficient local execution
 
 ### 💬 AI Chat
 
@@ -146,7 +146,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Credits
 
 - Models provided by Hugging Face
-- ONNX Runtime for model execution
+-  Runtime for model execution
 - Various open-source contributors
 
 ## Performance 📊
@@ -162,7 +162,7 @@ Need a specific model? We're constantly expanding our model support!
 
 ### How to Request:
 
-1. Check if the model is ONNX compatible
+1. Check if the model is  compatible
 2. [Create a Model Request](https://github.com/mrniamster/noaxai/issues/new?assignees=&labels=model-request&template=model_request.md&title=%5BMODEL%5D+) on GitHub
 3. Provide the following information:
    - Model name and Hugging Face link
