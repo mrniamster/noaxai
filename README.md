@@ -1,4 +1,4 @@
-# NoaxAI 🌠 - Run Models Locally | Your Local AI Coding Assistant 
+# NoaxAI 🌠 - Run Models Locally | Your Local AI Coding Assistant.
 
 <div align="center">
 
