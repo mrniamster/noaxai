@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoaxAI - Local AI Coding Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">NoaxAI</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#models">Models</a>
+            <a href="#installation">Installation</a>
+            <a href="#docs">Documentation</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your AI Coding Partner, Running Locally</h1>
+            <p class="tagline">Access powerful AI coding assistance directly in VS Code, with full control over your models and data privacy</p>
+            <div class="cta-buttons">
+                <a href="#installation" class="cta-primary">Install Extension</a>
+                <a href="#models" class="cta-secondary">Browse Models</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose NoaxAI?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>100% Local Processing</h3>
+                <p>All AI operations run on your machine, ensuring complete privacy and data security</p>
+            </div>
+            <div class="feature-card">
+                <h3>Custom Model Support</h3>
+                <p>Use pre-packaged models or import your own - full flexibility for your needs</p>
+            </div>
+            <div class="feature-card">
+                <h3>VS Code Integration</h3>
+                <p>Seamless integration with your favorite IDE for a natural coding experience</p>
+            </div>
+            <div class="feature-card">
+                <h3>Model Marketplace</h3>
+                <p>Request and download new models directly from the community marketplace</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo hero-demo">
+        <div class="demo-container">
+            <div class="demo-text">
+                <h1>NoaxAI</h1>
+                <p class="tagline">Your <span class="keyword primary">AI</span> powered <span class="keyword">coding</span> <span class="keyword">assistant</span> for VS Code</p>
+                <p class="tech-stack">Powered by <span class="keyword secondary">Local</span> <span class="keyword secondary">LLM</span> using <span class="keyword">ONNX</span> and <span class="keyword">HuggingFace</span> <span class="keyword">models</span></p>
+                <div class="cta-buttons">
+                    <a href="#installation" class="cta-primary">Get Started</a>
+                    <a href="https://marketplace.visualstudio.com/items?itemName=yourusername.noaxai" class="cta-secondary">VS Code Marketplace</a>
+                </div>
+            </div>
+            <div class="demo-video">
+                <video controls width="100%" autoplay muted loop>
+                    <source src="demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-microchip"></i>
+                <h3><span class="keyword secondary">Local</span> Processing</h3>
+                <p>Run <span class="keyword">AI</span> models locally on your machine for privacy and speed.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3><span class="keyword secondary">LLM</h3>
+                <p>Advanced language models from <span class="keyword">onnx-community</span> for intelligent assistance.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bug"></i>
+                <h3>Bug Detection</h3>
+                <p>Identify and fix potential bugs in your code with intelligent analysis.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-vial"></i>
+                <h3>Unit Testing</h3>
+                <p>Generate comprehensive unit tests for your code automatically.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-book"></i>
+                <h3>Documentation AI</h3>
+                <p>Create detailed documentation for your codebase with AI assistance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="installation" class="installation">
+        <h2>Installation</h2>
+        <div class="installation-steps">
+            <div class="step">
+                <h3>1. Install Extension</h3>
+                <p>Install NoaxAI from the VS Code marketplace</p>
+                <code>ext install noaxai</code>
+            </div>
+            <div class="step">
+                <h3>2. Select Model</h3>
+                <p>Choose an AI model from the Explore Models panel</p>
+            </div>
+            <div class="step">
+                <h3>3. Start Coding</h3>
+                <p>Use the command palette or context menu to access NoaxAI features</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="usage" class="usage">
+        <h2>Quick Usage Guide</h2>
+        <div class="usage-examples">
+            <div class="example">
+                <h3>Refactor Code</h3>
+                <code>Ctrl+Shift+P → NoaxAI: Refactor Code</code>
+            </div>
+            <div class="example">
+                <h3>Fix Bugs</h3>
+                <code>Ctrl+Shift+P → NoaxAI: Fix Bug</code>
+            </div>
+            <div class="example">
+                <h3>Generate Tests</h3>
+                <code>Ctrl+Shift+P → NoaxAI: Generate Unit Test</code>
+            </div>
+        </div>
+    </section>
+
+    <section id="models" class="models">
+        <h2>Supported <span class="keyword">models</span></h2>
+        <p class="models-intro">Powered by <span class="keyword">HuggingFace</span> and <span class="keyword">ONNX</span> optimization</p>
+        <div class="model-grid" id="modelGrid">
+            <!-- Models will be populated dynamically -->
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials hidden">
+        <h2>Developer Stories</h2>
+        <div class="testimonial-grid">
+            <blockquote class="testimonial">
+                <p>"NoaxAI has significantly improved my coding workflow. The AI suggestions are spot-on!"</p>
+                <footer>- John Doe, Senior Developer</footer>
+            </blockquote>
+            <blockquote class="testimonial">
+                <p>"The documentation generation feature saves me hours of work every week."</p>
+                <footer>- Jane Smith, Tech Lead</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NoaxAI. Licensed under MIT.</p>
+    </footer>
+
+    <script>
+        // Dynamically load and display models
+        async function loadModels() {
+            try {
+                const response = await fetch('models.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                if (!data.models || !Array.isArray(data.models)) {
+                    throw new Error('Invalid models data structure');
+                }
+
+                const modelGrid = document.getElementById('modelGrid');
+                modelGrid.innerHTML = ''; // Clear existing content
+
+                data.models.forEach(model => {
+                    const modelCard = document.createElement('div');
+                    modelCard.className = 'model-card';
+                    modelCard.innerHTML = `
+                        <h3>${model.key}</h3>
+                        <p>${model.description}</p>
+                        <div class="model-stats">
+                            <span class="model-size">${model.size || 'N/A'}</span>
+                            <span class="model-type">${model.type || 'General Purpose'}</span>
+                        </div>
+                    `;
+                    modelGrid.appendChild(modelCard);
+                });
+            } catch (error) {
+                console.error('Error loading models:', error);
+                const modelGrid = document.getElementById('modelGrid');
+                modelGrid.innerHTML = `
+                    <div class="error-message" style="text-align: center; color: var(--error-color); padding: 2rem;">
+                        <h3>Failed to load models</h3>
+                        <p>Please try refreshing the page</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Call the function when the page loads
+        loadModels();
+    </script>
+</body>
+</html>

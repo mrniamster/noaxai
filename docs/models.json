@@ -1,0 +1,40 @@
+{
+    "models": [
+        {
+            "key": "SmolLM2-135M",
+            "description": "Lightweight and fast local model for quick code assistance",
+            "size": "135MB",
+            "type": "Code Generation"
+        },
+        {
+            "key": "Llama-3.2-1B",
+            "description": "Powerful model for advanced code understanding and generation",
+            "size": "1.2GB",
+            "type": "Full-Stack Assistant"
+        },
+        {
+            "key": "CodeLlama-7b-Instruct-ONNX",
+            "description": "Optimized Code Llama model for code completion and generation",
+            "size": "7GB",
+            "type": "Code Generation"
+        },
+        {
+            "key": "StarCoder-ONNX",
+            "description": "Specialized model for multiple programming languages",
+            "size": "5GB",
+            "type": "Multi-language"
+        },
+        {
+            "key": "CodeBERT-ONNX",
+            "description": "Lightweight model for code understanding and analysis",
+            "size": "1.5GB",
+            "type": "Code Analysis"
+        },
+        {
+            "key": "GPT4All-ONNX",
+            "description": "General purpose coding assistant with broad capabilities",
+            "size": "4GB",
+            "type": "General Purpose"
+        }
+    ]
+}
