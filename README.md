@@ -1,6 +1,8 @@
-# NoaxAI 🌠 - Run Models Locally | Your Local AI Coding Assistant.
+# NoaxAI 🌠 - Your Local AI Coding Assistant
 
 <div align="center">
+
+![NoaxAI Banner](media/images/logo.png)
 
 [![GitHub stars](https://img.shields.io/github/stars/mrniamster/noaxai.svg?style=social&label=Star&maxAge=2592000)](https://github.com/mrniamster/noaxai)
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/mrniamster.noaxai.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=mrniamster.noaxai)
@@ -8,38 +10,45 @@
 [![Rating](https://img.shields.io/visual-studio-marketplace/r/mrniamster.noaxai.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=mrniamster.noaxai)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 
-[Star on GitHub](https://github.com/mrniamster/noaxai) • [Report Bug](https://github.com/mrniamster/noaxai/issues) • [Request Feature](https://github.com/mrniamster/noaxai/issues)
+**Your AI coding companion that runs completely offline!**
 
 </div>
 
-> Run Hugging Face models locally in VS Code! Code with AI assistance completely offline using  runtime.
+> Run Hugging Face models locally in VS Code! Code with AI assistance completely offline using runtime.
 
 NoaxAI brings the power of large language models directly into your editor - no cloud services required. Download models once, then work completely offline with AI-powered coding assistance.
 
 ## Why NoaxAI? 🤔
 
 - 🔒 **Privacy First**: All AI operations run locally on your machine
-- 💨 **Fast & Efficient**: Uses  optimized models for quick responses
+- 💨 **Fast & Efficient**: Uses optimized models for quick responses
 - 🌐 **Offline Ready**: No internet needed after initial model download
 - 🎯 **Code Focused**: Built specifically for programming workflows
 - 💰 **Free Forever**: No subscriptions or API costs
 
 ## Features
 
-### 🤖 Model Management
+### 🤖 Enhanced Model Management
 
 - Explore and manage AI models through the "Explore Models" panel
-- Install multiple models locally
-- Switch between different models for various tasks
-- Supports  optimized models for efficient local execution
+- Search models by name, size, or description
+- Models are sorted by size for easy selection
+- Visual indicators for installed and selected models
+- Real-time download progress with progress bar
+- Models range from 4K to 3B parameters
+- Switch between different models instantly
 
-### 💬 AI Chat
+### 💬 Advanced AI Chat
 
 - Interactive chat interface with AI assistant
-- Context-aware responses based on your codebase
+- Multi-file context support - attach multiple files to your questions
 - Stream responses in real-time
 - Export generated code directly to files
-- Pin files to provide context to the AI
+- Quick action suggestions and code examples
+- Organized welcome screen with common tasks
+- Stop generation at any time
+- Visual file attachment system
+- Rich markdown and code block support
 
 ### 🛠️ Code Operations
 
@@ -48,6 +57,8 @@ NoaxAI brings the power of large language models directly into your editor - no 
 - **Fix Bugs**: Get suggestions for bug fixes
 - **Document Code**: Generate comprehensive documentation
 - **Custom Operations**: Use inline editing for custom code transformations
+- **Right-Click Menu**: Quick access to NoaxAI features
+- **Context-Aware**: Language-specific suggestions
 
 ### 📝 Documentation Generation
 
@@ -56,6 +67,8 @@ NoaxAI brings the power of large language models directly into your editor - no 
 - Generate ASCII diagrams for code structure
 - Export to markdown format
 - Support for mkdocs configuration
+- Maintains folder structure in output
+- Customizable site name and description
 
 ### 🖥️ REPL Integration
 
@@ -63,32 +76,39 @@ NoaxAI brings the power of large language models directly into your editor - no 
 - Get suggestions for terminal commands
 - Execute suggested commands directly
 - Interactive command selection
+- Real-time command output display
+- Multiple command suggestions
 
 ## Installation
 
-1. Install [NoaxAI](https://marketplace.visualstudio.com/items?itemName=mrniamster.noaxai)  extension from VS Code marketplace 
+1. Install [NoaxAI](https://marketplace.visualstudio.com/items?itemName=mrniamster.noaxai) extension from VS Code marketplace
 2. Open VS Code
 3. Open the "Explore Models" panel in the sidebar
-4. Click on a model to install it locally
-5. Wait for the model to download and install
-6. Select the installed model for use
+4. Browse or search for a model that fits your needs
+5. Click on a model to install it locally
+6. Wait for the model to download (progress bar will show status)
+7. The model will be automatically selected after installation
 
 ## Usage
 
-### Model Selection
+### Model Selection & Search
 
 1. Open the "Explore Models" panel
-2. Click on the cloud icon to install a model
-3. Once installed, click on the model to select it for use
-4. The selected model will be marked with a checkmark
+2. Use the search icon to find models by name, size, or description
+3. Click on the cloud icon to install a model
+4. Installed models show a checkmark
+5. Selected model shows "Selected ✓" indicator
+6. Models are sorted by size for easy selection
 
-### Chat Interface
+### Enhanced Chat Interface
 
 1. Click the chat icon in the status bar or use command palette
-2. Type your question or request
-3. (Optional) Pin relevant files for context
-4. Press Enter or click Send
-5. View streamed responses in real-time
+2. Use 📎 to attach relevant workspace files
+3. Toggle "Export" to save generated code to files
+4. Real-time streaming responses
+5. Stop generation at any time
+6. Organized suggestions for common tasks
+7. Visual file context display
 
 ### Code Operations
 
@@ -146,7 +166,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Credits
 
 - Models provided by Hugging Face
--  Runtime for model execution
+- Runtime for model execution
 - Various open-source contributors
 
 ## Performance 📊
@@ -162,7 +182,7 @@ Need a specific model? We're constantly expanding our model support!
 
 ### How to Request:
 
-1. Check if the model is  compatible
+1. Check if the model is compatible
 2. [Create a Model Request](https://github.com/mrniamster/noaxai/issues/new?assignees=&labels=model-request&template=model_request.md&title=%5BMODEL%5D+) on GitHub
 3. Provide the following information:
    - Model name and Hugging Face link
@@ -181,4 +201,5 @@ Current model priorities:
 
 <!-- - Follow [@mrniamster](https://twitter.com/mrniamster) for updates
 - Join our [Discord Community](https://discord.gg/yourdiscord) -->
+
 - Star the repo to show support! ⭐

@@ -1,0 +1,34 @@
+/* TEAM */
+    Author: mrniamster
+    Contact: github.com/mrniamster
+    From: Earth
+
+/* THANKS */
+    HuggingFace Team - For the model ecosystem
+    ONNX Community - For optimized model formats
+    VS Code Team - For the amazing extension platform
+
+/* SITE */
+    Last update: 2024/03/15
+    Language: JavaScript/TypeScript
+    IDE: Visual Studio Code
+    Platform: VS Code Extension
+
+/* CHANGELOG v0.2.0 */
+    - Added model search functionality
+    - Implemented multi-file context support in chat
+    - Enhanced model management with size sorting
+    - Added visual progress bars for model downloads
+    - Improved chat interface with file attachments
+    - Added "Selected ✓" indicators for active models
+    - Enhanced documentation generation
+    - Improved streaming response handling
+    - Added stop generation feature
+    - Better error handling and user feedback
+    - Various UI/UX improvements
+
+/* TECHNOLOGY */
+    - @huggingface/transformers
+    - VS Code Extension API
+    - Node.js
+    - WebView API

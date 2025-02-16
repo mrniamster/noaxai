@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoaxAI - Local AI Coding Assistant</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script src="demo.js" defer></script>
 </head>
 <body>
     <nav>
@@ -23,7 +27,7 @@
             <h1>Your AI Coding Partner, Running Locally</h1>
             <p class="tagline">Access powerful AI coding assistance directly in VS Code, with full control over your models and data privacy</p>
             <div class="cta-buttons">
-                <a href="#installation" class="cta-primary">Install Extension</a>
+                <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=mrniamster.noaxai" class="cta-primary">Install Extension</a>
                 <a href="#models" class="cta-secondary">Browse Models</a>
             </div>
             <div class="product-hunt-badge" style="margin-top: 20px;">
@@ -39,23 +43,115 @@
     </section>
 
     <section class="features">
-        <h2>Why Choose NoaxAI?</h2>
+        <h2>Latest Features & Improvements</h2>
         <div class="feature-grid">
             <div class="feature-card">
-                <h3>100% Local Processing</h3>
-                <p>All AI operations run on your machine, ensuring complete privacy and data security</p>
+                <i class="fas fa-search"></i>
+                <h3>Enhanced Model Search</h3>
+                <p>Find the perfect model with our new search functionality - filter by size, name, or description</p>
             </div>
             <div class="feature-card">
-                <h3>Custom Model Support</h3>
-                <p>Use pre-packaged models or import your own - full flexibility for your needs</p>
+                <i class="fas fa-paperclip"></i>
+                <h3>Multi-File Context</h3>
+                <p>Attach multiple files to your AI chat for better context-aware assistance</p>
             </div>
             <div class="feature-card">
-                <h3>VS Code Integration</h3>
-                <p>Seamless integration with your favorite IDE for a natural coding experience</p>
+                <i class="fas fa-sort-amount-down"></i>
+                <h3>Smart Model Organization</h3>
+                <p>Models automatically sorted by size with visual indicators for installation status</p>
             </div>
             <div class="feature-card">
-                <h3>Model Marketplace</h3>
-                <p>Request and download new models directly from the community marketplace</p>
+                <i class="fas fa-stop-circle"></i>
+                <h3>Generation Control</h3>
+                <p>Stop AI generation at any time with real-time streaming responses</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-terminal"></i>
+                <h3>Interactive REPL</h3>
+                <p>AI-powered command suggestions with real-time execution in terminal</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-folder-open"></i>
+                <h3>Documentation Generator</h3>
+                <p>Generate comprehensive documentation for entire folders with ASCII diagrams</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-code-branch"></i>
+                <h3>Context Menu Integration</h3>
+                <p>Quick access to AI features through VS Code's right-click menu</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-download"></i>
+                <h3>Visual Progress</h3>
+                <p>Real-time download progress with visual indicators for model installation</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-categories">
+        <h2>Model Categories</h2>
+        <div class="category-grid">
+            <div class="category-card tiny">
+                <h3>Tiny Models</h3>
+                <p>< 100MB • Perfect for quick tasks</p>
+                <ul>
+                    <li>Fast response time</li>
+                    <li>Minimal resource usage</li>
+                    <li>Ideal for code completion</li>
+                </ul>
+            </div>
+            <div class="category-card small">
+                <h3>Small Models</h3>
+                <p>100MB - 500MB • Balanced performance</p>
+                <ul>
+                    <li>Good general-purpose use</li>
+                    <li>Efficient memory usage</li>
+                    <li>Quick installation</li>
+                </ul>
+            </div>
+            <div class="category-card medium">
+                <h3>Medium Models</h3>
+                <p>500MB - 1.5GB • Enhanced capabilities</p>
+                <ul>
+                    <li>Better understanding</li>
+                    <li>More accurate responses</li>
+                    <li>Advanced code generation</li>
+                </ul>
+            </div>
+            <div class="category-card large">
+                <h3>Large Models</h3>
+                <p>> 1.5GB • Maximum capability</p>
+                <ul>
+                    <li>Complex problem solving</li>
+                    <li>Deep code understanding</li>
+                    <li>Best overall performance</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="workflow">
+        <h2>Enhanced Workflow</h2>
+        <div class="workflow-steps">
+            <div class="step">
+                <i class="fas fa-search"></i>
+                <h3>1. Find Your Model</h3>
+                <p>Use the new search feature to find the perfect model for your needs</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-download"></i>
+                <h3>2. Quick Installation</h3>
+                <p>Download with visual progress tracking and automatic selection</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-code"></i>
+                <h3>3. Code with Context</h3>
+                <p>Attach relevant files and get context-aware assistance</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-check-circle"></i>
+                <h3>4. Review & Apply</h3>
+                <p>Review AI suggestions and apply them with one click</p>
             </div>
         </div>
     </section>
@@ -68,14 +164,11 @@
                 <p class="tech-stack">Powered by <span class="keyword secondary">Local</span> <span class="keyword secondary">LLM</span> using <span class="keyword">ONNX</span> and <span class="keyword">HuggingFace</span> <span class="keyword">models</span></p>
                 <div class="cta-buttons">
                     <a href="#installation" class="cta-primary">Get Started</a>
-                    <a href="https://marketplace.visualstudio.com/items?itemName=yourusername.noaxai" class="cta-secondary">VS Code Marketplace</a>
+                    <a href="https://marketplace.visualstudio.com/items?itemName=mrniamster.noaxai" class="cta-secondary">VS Code Marketplace</a>
                 </div>
             </div>
             <div class="demo-video">
-                <video controls width="100%" autoplay muted loop>
-                    <source src="demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <img src="https://i.ibb.co/wNxfwp9q/ezgif-62d35509326ece.gif" />
             </div>
         </div>
     </section>
@@ -153,6 +246,167 @@
         <p class="models-intro">Powered by <span class="keyword">HuggingFace</span> and <span class="keyword">ONNX</span> optimization</p>
         <div class="model-grid" id="modelGrid">
             <!-- Models will be populated dynamically -->
+        </div>
+    </section>
+
+    <section class="performance-matrix">
+        <h2>Model Performance Matrix</h2>
+        <div class="matrix-container">
+            <table class="performance-table">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Size</th>
+                        <th>Speed</th>
+                        <th>RAM Usage</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SmolLM2-135M</td>
+                        <td>135MB</td>
+                        <td><span class="performance high">Fast</span></td>
+                        <td>~300MB</td>
+                        <td>Quick code completions, syntax fixes</td>
+                    </tr>
+                    <tr>
+                        <td>Llama-3.2-1B</td>
+                        <td>1.1GB</td>
+                        <td><span class="performance medium">Standard</span></td>
+                        <td>~2GB</td>
+                        <td>Code generation, refactoring</td>
+                    </tr>
+                    <tr>
+                        <td>Phi-3-mini</td>
+                        <td>4K</td>
+                        <td><span class="performance very-high">Very Fast</span></td>
+                        <td>~100MB</td>
+                        <td>Real-time completions</td>
+                    </tr>
+                    <tr>
+                        <td>Qwen2.5-1.5B</td>
+                        <td>1.5GB</td>
+                        <td><span class="performance medium">Standard</span></td>
+                        <td>~3GB</td>
+                        <td>Complex code analysis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="usage-examples">
+            <h3>Recommended Usage Scenarios</h3>
+            <div class="scenario-grid">
+                <div class="scenario-card">
+                    <h4>Quick Development</h4>
+                    <p>Use Phi-3-mini or SmolLM2-135M for:</p>
+                    <ul>
+                        <li>Code completion</li>
+                        <li>Simple bug fixes</li>
+                        <li>Basic documentation</li>
+                    </ul>
+                </div>
+                <div class="scenario-card">
+                    <h4>Detailed Analysis</h4>
+                    <p>Use Llama-3.2-1B or Qwen2.5-1.5B for:</p>
+                    <ul>
+                        <li>Complex refactoring</li>
+                        <li>Test generation</li>
+                        <li>Architecture suggestions</li>
+                    </ul>
+                </div>
+                <div class="scenario-card highlight">
+                    <h4>💡 Pro Tip</h4>
+                    <p>Start with a smaller model and upgrade based on your needs. All models can be switched instantly!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-demo">
+        <h2>Try It Now</h2>
+        <div class="demo-container">
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="filename">example.js</span>
+                </div>
+                <pre class="code-content">
+<code>function processData(data) {
+    // TODO: Optimize this function
+    let result = [];
+    for(let i = 0; i < data.length; i++) {
+        for(let j = 0; j < data.length; j++) {
+            if(data[i] === data[j]) {
+                result.push(data[i]);
+            }
+        }
+    }
+    return result;
+}</code>
+                </pre>
+                <div class="actions">
+                    <button class="action-btn refactor">🔄 Refactor</button>
+                    <button class="action-btn test">✅ Generate Test</button>
+                    <button class="action-btn fix">🔧 Fix</button>
+                </div>
+            </div>
+            <div class="ai-response">
+                <div class="response-header">
+                    <span class="ai-icon">🌠</span>
+                    <span class="ai-title">NoaxAI Response</span>
+                </div>
+                <div class="response-content">
+                    <pre><code>// Optimized version with O(n) complexity
+function processData(data) {
+    const seen = new Set();
+    const result = [];
+    
+    for (const item of data) {
+        if (seen.has(item)) {
+            result.push(item);
+        }
+        seen.add(item);
+    }
+    
+    return result;
+}</code></pre>
+                    <div class="improvements">
+                        <span class="tag">✨ Better Performance</span>
+                        <span class="tag">🎯 O(n) Complexity</span>
+                        <span class="tag">💡 More Readable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="key-metrics">
+        <h2>Why Developers Love NoaxAI</h2>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">100%</div>
+                <div class="metric-label">Privacy - All Local</div>
+                <div class="metric-description">Your code never leaves your machine</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">&lt; 100ms</div>
+                <div class="metric-label">Response Time</div>
+                <div class="metric-description">With optimized local models</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">28+</div>
+                <div class="metric-label">Models Available</div>
+                <div class="metric-description">From 4K to 3B parameters</div>
+            </div>
+            <div class="metric-card highlight">
+                <div class="metric-value">0$</div>
+                <div class="metric-label">Monthly Cost</div>
+                <div class="metric-description">Free forever, no API costs</div>
+            </div>
         </div>
     </section>
 
